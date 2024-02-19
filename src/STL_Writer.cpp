@@ -2,12 +2,12 @@
 #include <iostream>
 #include <map>
 #include <set>
-#include "../headers/STL_Writer.h"
+#include "../headers/Mesh_Writer.h"
 
-STL_Writer::STL_Writer() {}
-STL_Writer::~STL_Writer() {}
+Mesh_Writer::Mesh_Writer() {}
+Mesh_Writer::~Mesh_Writer() {}
 
-Triangulations& STL_Writer::stlWrite(Triangulations& triangulation) {
+Triangulations& Mesh_Writer::meshWrite(Triangulations& triangulation) {
     std::vector<Point3D>& points = triangulation.uniquePoints();
     std::vector<Triangle>& triangles = triangulation.triangles();
     

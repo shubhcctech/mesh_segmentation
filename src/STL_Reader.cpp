@@ -89,8 +89,10 @@ Triangulations STL_Reader::stlReader(const std::string &fileNamePath)
             }
             else if (count == 2)
             {
+                
                 index3 = pointMap[point3D];
                 count++;
+                
                 triangulation.triangles().push_back(Triangle(index1, index2, index3, normalIndex));
 
                 count = 0;

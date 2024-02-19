@@ -8,11 +8,11 @@
 
 // Writes .stl and .obj to txt as well as interconvrsion.
 
-class STL_Writer
+class Mesh_Writer
 {
     public:
-        STL_Writer();
-        ~STL_Writer();
-        Triangulations &stlWrite(Triangulations &tringulation);
+        Mesh_Writer();
+        ~Mesh_Writer();
+        Triangulations &meshWrite(Triangulations &tringulation);
 };
 

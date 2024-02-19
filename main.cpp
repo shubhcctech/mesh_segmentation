@@ -1,6 +1,6 @@
 #include <iostream>
 #include "headers/STL_Reader.h"
-#include "headers/STL_Writer.h"
+#include "headers/Mesh_Writer.h"
 
 
 int main()
@@ -8,6 +8,6 @@ int main()
     STL_Reader fileReader;
     Triangulations triangulation = fileReader.stlReader("resources\\cube.stl");
 
-    STL_Writer filewriter;
-    filewriter.stlWrite( triangulation);
+    Mesh_Writer filewriter;
+    filewriter.meshWrite( triangulation);
 }
